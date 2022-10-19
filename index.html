@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script type="text/javascript" src="/js/funciones.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Mudanzas LM</title>
+</head>
+<body>
+    <header>
+        <section class="datos">
+            <div class="dato">
+                <label for="">celular: 3101234567</label>
+                <a href="#">mudanzaslm@gmail.com</a>
+                <a href="mailto:">lmmudanzas@gmail.com</a>
+            </div>
+        </section>
+    
+        <!--menu celular-->
+        <div class="hamburger" onclick="mostrar()">
+            <span></span><span></span><span></span>
+        </div>
+        
+        <nav class="menu">
+            <img class="logoi" src="/assets/img/logo.jpg" alt="">
+            <label class="logo" for="">LM</label>
+            <ul id="sliding_menu">
+                <li><span class="close" onclick="ocultar()" >X</span></li>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/paginas/mudanzas.html">Mudanzas</a></li>
+                <li><a href="/paginas/servicios.html">Servicios</a></li>
+                <li><a href="/paginas/nostros.html">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--baner-->
+    <div class="banner">
+        <div class="texto_banner">
+            <h1>Mudanzas LM</h1>
+            <p>para nosotros tus objetos son lo mas imortante trabajamos todos los dias realizamos mudanzas con personal calificado con las mejores tecnicas de manejo...</p>
+        </div>
+    </div>
+    
+    <!--cuerpo-->
+    <main>
+        <section class="nosotros">
+            <h1 class="titulo">¿Quienes Somos?</h1>
+            <div class="linea"></div>
+            <p class="contenido">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, repudiandae, ipsam aperiam quia omnis, ullam facere nostrum voluptatem rem nisi laborum beatae expedita quidem porro molestias hic 
+            </p>
+            <a href="/paginas/nostros.html" class="boton">Ver más</a>
+        </section>
+
+        <section class="servicios">
+            <h1 class="titulo">Nuestros Servicios</h1>
+            <div class="linea"></div>
+            <div class="contenido">
+                <div class="imagen">
+                    <div class="img_nosotros">
+                        <img src="/assets/img/rural.jpg" alt="">
+                    </div>
+                    <p>Mudanzas en Bogotá</p>
+                    <div class="boton2">Ver más</div>
+                </div>
+                <div class="imagen">
+                    <div class="img_nosotros">
+                        <img src="/assets/img/camion_gris.jpg" alt="">
+                    </div>
+                    <p>Mudanzas Nacionales</p>
+                    <div class="boton2">Ver más</div>
+                </div>
+                <div class="imagen">
+                    <div class="img_nosotros">
+                        <img src="/assets/img/empaque.jpg" alt="">
+                    </div>
+                    <p>Empaque</p>
+                    <div class="boton2">Ver más</div>
+                </div>
+                <div class="imagen">
+                    <div class="img_nosotros">
+                        <img src="/assets/img/carga.webp" alt="">
+                    </div>
+                    <p>Eventos</p>
+                    <div class="boton2">Ver más</div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <img src="/assets/img/operadorap.png" alt="">
+            <form action="" class="formulario">
+                <p>
+                    <label for="nombre">Nombre<br>
+                        <span>
+                            <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Ingrese su nombre"
+                            autocomplete="off"
+                            >
+                        </span>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="celular">Celular<br>
+                            <span>
+                                <input
+                                id="celular"
+                                type="text"
+                                placeholder="Numero de celular"
+                                >
+                            </span>
+                        </label>
+                    </p>
+                
+                    <p>
+                        <label for="mensaje">Mensaje<br>
+                            <span>
+                                <textarea
+                                id="mensaje"
+                                cols="30"
+                                rows="10"
+                                placeholder="Escriba su mensaje">
+                                </textarea>
+                            </span>
+                        </label>
+                    </p>
+                    <p>
+                        <button class="boton" id="send">Enviar</button>
+                    </p>
+                
+                    <script src="/js/funciones.js"></script>
+                
+            </form>
+            
+            <h1>Sigenos</h1>
+            <i class='bx bxl-facebook-circle bx-md' style='color:#fdfdfd'  ></i>
+            <i class='bx bxl-instagram bx-md' style='color:#fdfdfd' ></i>
+            <i class='bx bxl-whatsapp bx-md' style='color:#fdfdfd' ></i>
+            <i class='bx bxl-gmail bx-md' style='color:#fdfdfd' ></i>
+                
+            <span>celular: 3101234567</span>
+            <span>mudanzaslm@gmail.com</span>
+            <span>lmmudanzas@gmail.com</span>
+            
+        </footer>
+
+    </main>
+    
+    <a href="https://api.whatsapp.com/send?phone=573163745958&text=%C2%A1Hola%21+Deseo+informaci%C3%B3n+de+sus+servicios%2C+me+comunico+desde+la+ciudad+de&type=phone_number&app_absent=0" class="btn-wsp" target="_blank">
+	    <i class="fa fa-whatsapp icono"></i>
+	</a>
+</body>
+</html>

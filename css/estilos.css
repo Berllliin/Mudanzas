@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Noto+Serif:ital@1&family=Roboto:wght@100;400;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background: url(/assets/img/flota.webp) no-repeat center center/cover;
+    left: 0;
+    top: 99px;
+    display: block;
+}
+
+.banner .texto_banner{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    min-width: 40%;
+    min-height: 20%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .texto_banner p,
+.banner .texto_banner h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.menu .logo{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 900;
+    margin-left: 20px;
+    color: white;
+}
+
+.logoi{
+    height: 50px;
+    margin-left: 20px;
+}
+
+.menu{
+    background-color: #6f0b70;
+    box-shadow: 1px 1px 5px #000;
+}
+
+
+.menu ul{
+    float: right;
+    margin-right: 10px;
+}
+
+.menu ul li{
+    display:inline-block; 
+    margin: 30px 15px;
+}
+
+.menu ul li a{
+    font-size: 16px;
+    padding: 8px 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+.menu ul li a:hover{
+    color: yellowgreen;
+}
+
+.close{
+    color: rgba(255, 222, 173, 0);
+    
+}
+
+.datos{
+    background-color: rgb(114, 41, 121);
+    padding: 5px;
+    text-align: center;
+    word-spacing: 20px;
+}
+
+.dato{
+    color: white;
+}
+.dato a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+main{
+    position: absolute;
+}
+
+/* quienes somos */
+.pag-nosotros{
+    padding: 20px;
+    margin: 0px 100px;
+    display: grid;
+    position: relative;
+    top: 100px;
+    bottom: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.pag-nosotros div img{
+    height: 400px;
+    width: 100%;
+}
+
+.sub-menu-servicios {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: 900;
+}
+.sub-menu-servicios a{
+    padding: 20px;
+}
+.sub-menu-servicios a:hover{
+    color: yellowgreen;
+}
+
+
+.pag-servicios{
+    padding: 20px;
+    margin: 0px 100px;
+    display: grid;
+    position: relative;
+    top: 100px;
+    bottom: 50px;
+    grid-template-columns: 1fr ;
+    grid-auto-rows: auto;
+    column-gap: 30px;
+    row-gap: 50px;
+
+}
+.pag-servicios div p {
+    font-size: 50px;
+}
+
+.pag-servicios div img{
+    height: 500px;
+    width: 500px;
+}
+
+.img_servicio1 {
+    float: left;
+}  
+.img_servicio2 {
+    float: right;
+}  
+.img_servicio3 {
+    float: left;
+}  
+.img_servicio4 {
+    float: right;
+}  
+
+.pag-servicios div {
+    background: #ecf0f1;
+    padding: 1em;
+}
+
+.pag-servicios div:hover{
+    border: 1px solid #f1c40f;
+}
+
+.pag-mudanzas {
+    position: relative;
+    padding: 20px;
+    margin: 0px 100px;
+    top: 100px;
+    bottom: 50px;
+
+}
+
+.nosotros{
+    padding: 10px;
+    text-align: center;
+    margin:50px 250px;
+    background-image: url(/assets/img/negro.jpg);
+    height: 600px;
+    position: relative;
+    display: block;
+    top: 90px;
+}
+
+.img_nosotros{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo{
+    font-family: 'Amaranth', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 33px;
+    text-align: center;
+}
+
+.linea{
+    width: 200px;
+    height: 6px;
+    background-color: #591447;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.boton{
+    background-color: #591447;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 40px auto 0px;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.boton:hover{
+    background-color: #BF048D;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:40px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: white;
+    color: #20ba5a;
+}
+
+/* servicios index*/
+.servicios{
+    margin: 50px 100px;
+    position:relative;
+    top: 90px;
+    padding: 10px;
+}
+
+.servicios .contenido{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.imagen img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.imagen p{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.imagen .boton2{
+    background-color: #591447;
+    width: 100px;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+.boton2:hover{
+    background-color: #BF048D;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.footer{
+    background-color: rgb(61, 57, 57);
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 0px;
+    
+}
+
+.footer img{
+    float: right;
+    height: 270px;
+    width: 370px;
+    margin: 50px 0 0 0;
+}
+
+.footer i:hover{
+    cursor: pointer;
+    background-color: rgb(109, 100, 100);
+}
+
+@media(max-width: 700px){
+    .hamburger{
+        width: 20px;
+        position: absolute;
+        top: 60px;
+        left: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .hamburger span{
+        margin-bottom: 3px;
+        background-color: white;
+        display: block;
+        height: 3px;
+    }
+    
+    /*.menu
+        /* position: relative; */
+    nav ul{
+        float: none;
+        width: 200px;
+        padding: 0;
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+        background-color: rgba(165, 19, 153, 0.4);
+        margin: 0px;
+        padding-top: 80px;
+        transition: 0.5s;
+        left: -100%;
+        z-index: 2;
+    }
+    
+    .open{
+        left: 0;
+    }
+    
+    .menu ul li{
+        display: block;
+        float: none;
+    }
+    
+    .menu ul li a{
+        font-size: 18px;
+        padding: 20px 30px;
+    }
+    
+    .close{
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        right: 10px;
+        top: 70px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: 900;
+    }
+
+    .logoi{
+        margin-left: 60px;
+    }
+}
+
+@media(max-width: 850px){
+    .servicios .contenido{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 550px){
+    .servicios .contenido{
+        grid-template-columns: auto;
+
+        margin: 0px 80px;
+        row-gap: 50px;
+    }
+}
+
+@media(max-width: 850px){
+    .pag-nosotros{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+
+.formulario textarea {
+    border-radius: 20px;
+    line-height: 1.5 !important;
+    min-height: 11.7em;
+    max-height: 100px;
+    padding: .5625rem 1rem;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.formulario input{
+    padding: .5625rem 1rem;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.formulario{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 650;
+    color: #fff;
+    width: 350px;
+    font-size: 20px;
+    position: relative;
+    left: 50%;
+}
