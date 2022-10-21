@@ -16,11 +16,7 @@ body{
     width: 100%;
     position: relative;
     height: 300px;
-<<<<<<< HEAD
     background: url(../assets/img/flota.webp) #000 no-repeat center center/cover;
-=======
-    background: url(../assets/img/flota.webp) no-repeat center center/cover;
->>>>>>> e942f328c3fdb1574cb4773a7851b40f57f13a1f
     left: 0;
     top: 99px;
     display: block;
