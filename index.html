@@ -10,52 +10,62 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Mudanzas LM</title>
 </head>
+
 <body>
-    <header>
-        <section class="datos">
-            <div class="dato">
-                <label for="">celular: 3101234567</label>
-                <a href="#">mudanzaslm@gmail.com</a>
-                <a href="mailto:">lmmudanzas@gmail.com</a>
+    <!--menu-->
+    <div class="container">
+        <header>
+            <section class="datos">
+                <div class="dato">
+                    <label for="">celular: 3101234567</label>
+                    <a href="mailto:">lmmudanzas@gmail.com</a>
+                </div>
+            </section>
+        
+            <!--menu celular-->
+            <div class="hamburger" onclick="mostrar()">
+                <span></span><span></span><span></span>
+            </div>
+            <!--menu web-->
+            <nav class="menu">
+                <img class="logoi" src="assets/img/logo.jpg" alt="">
+                <label class="logo" for="">LM</label>
+                <ul id="sliding_menu">
+                    <li><span class="close" onclick="ocultar()" >X<span></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="mudanzas.html">Mudanzas</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nostros.html">Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--baner-->
+        <section class="banner">
+            <div class="bannerimg">
+                <img src="assets/img/flota.webp" alt="">
+            </div>
+            <div class="texto_banner">
+                <h1>Mudanzas LM</h1>
+                <p>para nosotros tus objetos son lo mas imortante   trabajamos todos los dias realizamos mudanzas con     personal calificado con las mejores tecnicas de manejo...   </p>
             </div>
         </section>
-    
-        <!--menu celular-->
-        <div class="hamburger" onclick="mostrar()">
-            <span></span><span></span><span></span>
-        </div>
-        
-        <nav class="menu">
-            <img class="logoi" src="assets/img/logo.jpg" alt="">
-            <label class="logo" for="">LM</label>
-            <ul id="sliding_menu">
-                <li><span class="close" onclick="ocultar()" >X</span></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="mudanzas.html">Mudanzas</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nostros.html">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!--baner-->
-    <div class="banner">
-        <div class="texto_banner">
-            <h1>Mudanzas LM</h1>
-            <p>para nosotros tus objetos son lo mas imortante trabajamos todos los dias realizamos mudanzas con personal calificado con las mejores tecnicas de manejo...</p>
-        </div>
-    </div>
-    
-    <!--cuerpo-->
-    <main>
+        <!--cuerpo-->
+        
         <section class="nosotros">
-            <h1 class="titulo">¿Quienes Somos?</h1>
-            <div class="linea"></div>
-            <p class="contenido">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, repudiandae, ipsam aperiam quia omnis, ullam facere nostrum voluptatem rem nisi laborum beatae expedita quidem porro molestias hic 
-            </p>
-            <a href="/paginas/nostros.html" class="boton">Ver más</a>
+            <img src="assets/img/negro.jpg" alt="">
+            <div class="texto_nosotros">
+                <div class="conjunto_texto">
+                <h1 class="titulo">¿Quienes Somos?</h1>
+                <div class="linea"></div>
+                <p class="contenido">
+                    Lorem ipsum, dolor sit amet consectetur    adipisicing elit. Consequatur,repudiandae,     ipsam aperiam quia omnis,ullam facere nostrum  voluptatem rem nisilaborum beatae expedita  quidem porromolestias hic 
+                </p>
+                <a href="nostros.html" class="boton">Ver más</a>
+                </div>
+            </div>
         </section>
 
         <section class="servicios">
@@ -63,38 +73,68 @@
             <div class="linea"></div>
             <div class="contenido">
                 <div class="imagen">
+                    <p>Mudanzas en Bogotá</p>
                     <div class="img_nosotros">
                         <img src="assets/img/rural.jpg" alt="">
                     </div>
-                    <p>Mudanzas en Bogotá</p>
-                    <div class="boton2">Ver más</div>
+                    <div class="boton2"><a href="servicios.html#1">Ver más</a></div>
                 </div>
                 <div class="imagen">
-                    <div class="img_nosotros">
-                        <img src="assets/img/camion_gris.jpg" alt="">
-                    </div>
                     <p>Mudanzas Nacionales</p>
-                    <div class="boton2">Ver más</div>
+                    <div class="img_nosotros">
+                        <img src="assets/img/camion_gris.jpg"alt="">
+                    </div>
+                    <div class="boton2"><a href="servicios.html#2">Ver más</a></div>
                 </div>
                 <div class="imagen">
+                    <p>Empaque</p>
                     <div class="img_nosotros">
                         <img src="assets/img/empaque.jpg" alt="">
                     </div>
-                    <p>Empaque</p>
-                    <div class="boton2">Ver más</div>
+                    <div class="boton2"><a href="servicios.html#3">Ver más</a></div>
                 </div>
                 <div class="imagen">
+                    <p>Eventos</p>
                     <div class="img_nosotros">
                         <img src="assets/img/carga.webp" alt="">
                     </div>
-                    <p>Eventos</p>
-                    <div class="boton2">Ver más</div>
+                    <div class="boton2"><a href="servicios.html#4">Ver más</a></div>
                 </div>
             </div>
         </section>
-    
+
         <footer class="footer">
-            <img src="assets/img/operadorap.png" alt="">
+            <div class="siguenos">
+                <h1>Siguenos</h1><br>
+                
+                <div class="x">
+                    <a href="https://www.facebook.com/profile.php?id=100057556548796">
+                        <i id="y" class='bx bxl-facebook-circle bx-md'     style='color:#fdfdfd'></i>
+                        
+                        
+                    </a>
+                    <span class="y">
+                        Mudanzas y transportes LM<
+                    </span>
+                    <br>
+
+                </div>
+
+                <a href="">
+                    <i class='bx bxl-instagram bx-md' style='color:#fdfdfd'></i>
+                </a><br>
+                <a href="">
+                    <i class='bx bxl-whatsapp bx-md' style='color:#fdfdfd'></i>
+                </a><br>
+                <a href="">
+                    <i class='bx bxl-gmail bx-md'
+                    style='color:#fdfdfd'></i>
+                </a><br>
+                <span>celular: 3101234567</span><br>
+                <span>mudanzaslm@gmail.com</span>
+                
+            </div>
+
             <form action="" class="formulario">
                 <p>
                     <label for="nombre">Nombre<br>
@@ -134,29 +174,22 @@
                         </label>
                     </p>
                     <p>
-                        <button class="boton" id="send">Enviar</button>
+                        <button class="boton3"id="send">Enviar</button>
                     </p>
                 
-                    <script src="js/funciones.js"></script>
+<script src="js/funciones.js"></script>
                 
             </form>
             
-            <h1>Sigenos</h1>
-            <i class='bx bxl-facebook-circle bx-md' style='color:#fdfdfd'  ></i>
-            <i class='bx bxl-instagram bx-md' style='color:#fdfdfd' ></i>
-            <i class='bx bxl-whatsapp bx-md' style='color:#fdfdfd' ></i>
-            <i class='bx bxl-gmail bx-md' style='color:#fdfdfd' ></i>
-                
-            <span>celular: 3101234567</span>
-            <span>mudanzaslm@gmail.com</span>
-            <span>lmmudanzas@gmail.com</span>
-            
+            <div class="imagen_footer">
+                <img src="assets/img/operadorap.png" alt="">
+            </div>
         </footer>
+        
 
-    </main>
-    
-    <a href="https://api.whatsapp.com/send?phone=573163745958&text=%C2%A1Hola%21+Deseo+informaci%C3%B3n+de+sus+servicios%2C+me+comunico+desde+la+ciudad+de&type=phone_number&app_absent=0" class="btn-wsp" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=573163745958&text=%C2%A1Hola%21+Deseo+informaci%C3%B3n+de+sus+servicios%2C+me+comunico+desde+la+ciudad+de&type=phone_number&app_absent=0" class="btn-wsp" target="_blank">
 	    <i class="fa fa-whatsapp icono"></i>
-	</a>
+	    </a>
+    </div>
 </body>
 </html>
