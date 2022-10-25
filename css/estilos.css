@@ -86,26 +86,6 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-@media screen and (max-width: 1024px) {
-    .footer{
-        grid-template-columns: 1fr 1fr;
-    }
-    .footer img{
-        display: none;
-    }
-}
-@media screen and (max-width: 680px) {
-    .footer{
-        grid-template-columns: 1fr;
-    }
-    .footer img{
-        display: none;
-    }
-    .siguenos{
-        color: #25d366;
-    }
-}
-
 .footer img{
     float: right;
     height: 57%;
@@ -114,42 +94,53 @@ header{
     border-radius: 80px;
     
 }
-
+.redes_cel a{
+    padding: 10px;
+    display: none;
+}
 .siguenos{
     margin-top: 7%;
     margin-left: 10%;   
     width: 100%;
 }
-.siguenos i{
-    transition: .5s ease;
+.fondo{
+    margin: 0;
+    height: 100%;
+    width: auto;
+    z-index: -2;
 }
-.siguenos a{
-    text-decoration: none;
-    color: #FFF;
-    transition: .5s ease;
+.fondo img{
+    width: 70%;
+    margin: -20px 70px 0 0;
 }
 .sidenav{
     position: relative;
 }
 .sidenav a{
     position: absolute;
-    left: -80%;
+    left: -70%;
     transition: 0.5s;
     padding: 10px;
-    width: 90%;
+    width: 75%;
     text-decoration: none;
     color: #FFF;
     border-radius: 10px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
 }
+
 .sidenav i{
     float: right;
     padding-left: 30px;
 }
 
+
 #mySidenav a:hover {
     left: 0;
-    
+    background-color: rgba(165, 19, 153, 0.4);
 }
+
 .facebook{
     top: 20px;
 }
@@ -573,8 +564,57 @@ header{
         padding: 10px;
     }
 }
+
+@media(max-width: 550px){
+    .servicios .contenido{
+        grid-template-columns: auto;
+        row-gap: 50px;
+    }
+}
+/*index footer*/
+@media screen and (max-width: 1419px) {
+    .fondo img{
+        width: 70%;
+        margin: 0 60px 0 0;
+    }
+}
+@media screen and (max-width: 1320px) {
+    .fondo img{
+        width: 70%;
+        margin: 30px 50px 0 0;
+    }
+    .sidenav a{
+        width: 95%;
+        left: -90%;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .sidenav i{
+        padding-left: 8px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .imagen_footer {
+        display: none;
+    }
+    .fondo img{
+        width: 60%;
+        margin: 15px 90px 0 0;
+    }
+    .sidenav a{
+        width: 80%;
+        left: -78%;
+        font-size: 19px;
+        font-weight: 500;
+    }
+}
+
 /*index quienes somos celular*/
-@media(max-width: 833px){
+/*index servicios celular y footer*/
+@media(max-width: 850px){
     .nosotros{
         grid-template-columns: 1fr ;
     }
@@ -591,23 +631,57 @@ header{
         position: relative;
         margin-top: 0%;
     }
-}
-/*index servicios celular*/
-@media(max-width: 850px){
     .servicios .contenido{
         grid-template-columns: 1fr 1fr;
     }
-}
-@media(max-width: 550px){
-    .servicios .contenido{
-        grid-template-columns: auto;
-        row-gap: 50px;
+    .fondo img{
+        width: 70%;
+        margin: 40px 25px 0 0;
+    }
+    .sidenav a{
+        width: 120%;
+        left: -111%;
+        font-size: 17px;
+        font-weight: 400;
     }
 }
-/*index formulario celular*/
+.formulario img{
+    display: none;
+}
+@media screen and (max-width: 680px) {
+    .footer{
+        grid-template-columns: 1fr;
+    }
+    .imagen_footer{
+        display: none;
+    }
+    .fondo{
+        margin: 0;
+        height: 100%;
+        width: auto;
+        z-index: -2;
+    }
+    .fondo img{
+        width: 70%;
+        margin: -20px 70px 0 0;
+    }
+    .sidenav{
+        display: none;
+    }
+    .redes_cel a{
+        display: inline;
+        text-decoration: none;
+    }
+    .formulario img{
+        
+        display: block;
+        height: 100px;
+        margin: 10px 50px;
+        position: absolute;
+        float: right;
 
-
-
+    }
+}
 @media(max-width: 850px){
     .pag-nosotros{
         grid-template-columns: 1fr;
