@@ -92,7 +92,6 @@ header{
     width: 120%;
     margin: 50px 0 0 0;
     border-radius: 80px;
-    
 }
 .redes_cel a{
     padding: 10px;
@@ -611,7 +610,6 @@ header{
         font-weight: 500;
     }
 }
-
 /*index quienes somos celular*/
 /*index servicios celular y footer*/
 @media(max-width: 850px){
