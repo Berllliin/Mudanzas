@@ -18,7 +18,7 @@
             <section class="datos">
                 <div class="dato">
                     <label for="">celular: 3196223364</label>
-                    <a href="mailto:">lmmudanzas@gmail.com</a>
+                    <a href="mailto:">leonardo.mudanzas@gmail.com</a>
                 </div>
             </section>
         
@@ -154,17 +154,19 @@
 
                  <!-- 
                 <span>celular: 3196223364</span><br>
-                <span>mudanzaslm@gmail.com</span>
+                <span>mudanzaslm@gmail.com</span
+                    http://127.0.0.1:5500/. correo >
                 -->
             </div>
 
-            <form action="" class="formulario">
+            <form action="https://formsubmit.co/leonardo.mudanzas@gmail.com" method="post" class="formulario">
                 <img src="assets/svg/click_tap.svg" alt="">
                 <p>
                     <label for="nombre">Nombre<br>
                         <span>
                             <input
                             type="text"
+                            name="name"
                             id="nombre"
                             placeholder="Ingrese su nombre"
                             autocomplete="off"
@@ -179,6 +181,7 @@
                                 <input
                                 id="celular"
                                 type="text"
+                                name="celular"
                                 placeholder="Numero de celular"
                                 >
                             </span>
@@ -189,6 +192,7 @@
                         <label for="mensaje">Mensaje<br>
                             <span>
                                 <textarea
+                                name="mensaje"
                                 id="mensaje"
                                 cols="30"
                                 rows="10"
@@ -198,10 +202,12 @@
                         </label>
                     </p>
                     <p>
-                        <button class="boton3"id="send">Enviar</button>
+                        <button type="submit" class="boton3" id="send">Enviar</button>
                     </p>
                 
-<script src="js/funciones.js"></script>
+                    <input type="hidden" name="_next" 
+                    value="http://127.0.0.1:5500/index.html">
+                    <input type="hidden" name="_captcha" value="false">
                 
             </form>
             
@@ -210,7 +216,6 @@
             </div>
         </footer>
         
-
         <a href="https://api.whatsapp.com/send?phone=573196223364&text=%C2%A1Hola%21+Deseo+informaci%C3%B3n+de+sus+servicios%2C+me+comunico+desde+la+ciudad+de&type=phone_number&app_absent=0" class="btn-wsp" target="_blank">
 	    <i class="fa fa-whatsapp icono"></i>
 	    </a>
